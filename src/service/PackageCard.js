@@ -16,6 +16,12 @@ export const PackageCard = ({ title, price, features, isHighlighted = false }) =
               </li>
             ))}
           </ul>
+          <a 
+            href="#contact" 
+            className="inline-block w-full text-center px-6 py-3 bg-purple-700 text-white font-bold uppercase rounded-full hover:bg-indigo-800 transition-colors"
+          >
+          Get Started
+        </a>
         </div>
       </div>
     );
