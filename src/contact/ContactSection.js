@@ -1,28 +1,22 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
 export const ContactSection = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-    const [status, setStatus] = useState('');
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.id]: e.target.value });
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        setStatus('Sending...');
 
-        try {
-          const response = await axios.post(`${process.env.REACT_APP_API_URL}/#contact`, formData);
-
-            if (response.status === 200) {
-                setStatus('Message sent successfully!');
-                setFormData({ name: '', email: '', message: '' });
-            }
-        } catch (error) {
-            setStatus('Error sending message. Try again.');
-        }
+        const phoneNumber = "918240446317"; // Replace with the owner's WhatsApp number (with country code)
+        
+        const whatsappMessage = `New Contact Form Submission:\n\n👤 Name: ${formData.name}\n📧 Email: ${formData.email}\n✉️ Message: ${formData.message}`;
+        
+        const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(whatsappMessage)}`;
+        
+        window.open(whatsappURL, "_blank"); // Opens WhatsApp with the pre-filled message
     };
 
     return (
@@ -72,12 +66,11 @@ export const ContactSection = () => {
               </div>
               <button 
                 type="submit" 
-                className="w-full px-6 py-3 bg-purple-700 text-white font-bold uppercase rounded-full hover:bg-indigo-800 transition-colors"
+                className="w-full px-6 py-3 bg-green-600 text-white font-bold uppercase rounded-full hover:bg-green-800 transition-colors"
               >
-                Send Message
+                Send Message via WhatsApp
               </button>
             </form>
-            {status && <p className="mt-4 text-center text-gray-700">{status}</p>}
           </div>
         </div>
       </section>
