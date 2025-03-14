@@ -8,16 +8,20 @@ export const ContactSection = () => {
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-
-        const phoneNumber = "918240446317"; // Replace with the owner's WhatsApp number (with country code)
-        
-        const whatsappMessage = `New Contact Form Submission:\n\n👤 Name: ${formData.name}\n📧 Email: ${formData.email}\n✉️ Message: ${formData.message}`;
-        
-        const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(whatsappMessage)}`;
-        
-        window.open(whatsappURL, "_blank"); // Opens WhatsApp with the pre-filled message
+      e.preventDefault();
+      
+      const phoneNumber = "919876543210"; // Replace with owner's actual number
+      const whatsappMessage = `Hello, my name is ${formData.name}. My email is ${formData.email}. Message: ${formData.message}`;
+      const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(whatsappMessage)}`;
+  
+      setStatus("Redirecting to WhatsApp...");
+  
+      setTimeout(() => {
+          window.open(whatsappURL, "_blank");
+          setStatus("If WhatsApp opened, please send the message manually.");
+      }, 2000); // Delay for better user experience
     };
+  
 
     return (
       <section id="contact" className="py-24 bg-white">
