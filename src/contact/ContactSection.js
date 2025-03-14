@@ -14,7 +14,7 @@ export const ContactSection = () => {
         setStatus('Sending...');
 
         try {
-          const response = await axios.post(`${process.env.REACT_APP_API_URL}/contact`, formData);
+          const response = await axios.post(`${process.env.REACT_APP_API_URL}/#contact`, formData);
 
             if (response.status === 200) {
                 setStatus('Message sent successfully!');
