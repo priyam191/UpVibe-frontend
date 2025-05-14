@@ -1,5 +1,6 @@
 import React from 'react'
 // import ReactDOM from 'react-dom/client';
+import { BrowserRouter , Routes, Route} from 'react-router-dom';
 import './index.css';
 import {Header} from './header/Header';
 import {HeroSection} from './hero/HeroSection';
@@ -12,14 +13,27 @@ import { Footer } from './footer/Footer';
 function App() {
     return ( 
         <>
-            <Header/>
+            {/* <Header/>
             <HeroSection/>
             <AboutSection/>
             <ServiceSection/>
             <PortfolioSection/>
             <PricingSection/>
             <ContactSection/>
-            <Footer/>
+            <Footer/> */}
+            <BrowserRouter>
+                <Header/>
+                <Routes>
+                    <Route path="/" element={<HeroSection/>} />
+                    <Route path="/about" element={<AboutSection/>} />
+                    <Route path="/services" element={<ServiceSection/>} />
+                    <Route path="/portfolio" element={<PortfolioSection/>} />
+                    <Route path="/pricing" element={<PricingSection/>} />
+                    <Route path="/contact" element={<ContactSection/>} />
+                </Routes>
+                <Footer/>
+            </BrowserRouter>
+
         </>
         
      );

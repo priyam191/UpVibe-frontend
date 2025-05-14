@@ -7,8 +7,8 @@ export const PortfolioSection = () => {
       {
         title: "TechParts Reseller",
         description: "We increased engagement by 78% and followers by 45% in just 3 months through consistent, high-quality content.",
-        beforeImage: "/api/placeholder/400/200",
-        afterImage: "/api/placeholder/400/200"
+        beforeImage: "media/content.jpg",
+        afterImage: "media/strategy.jpg"
       },
       {
         title: "Local Café",

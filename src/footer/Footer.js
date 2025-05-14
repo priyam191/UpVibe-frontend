@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return (
@@ -15,33 +16,33 @@ export const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
               <ul className="space-y-3">
-                <li><a href="#home" className="text-gray-400 hover:text-sky-400 transition-colors">Home</a></li>
-                <li><a href="#about" className="text-gray-400 hover:text-sky-400 transition-colors">About</a></li>
-                <li><a href="#services" className="text-gray-400 hover:text-sky-400 transition-colors">Services</a></li>
+                <li><Link to ="/" className="text-gray-400 hover:text-sky-400 transition-colors">Home</Link></li>
+                <li><Link to ="/about" className="text-gray-400 hover:text-sky-400 transition-colors">About</Link></li>
+                <li><Link to ="/services" className="text-gray-400 hover:text-sky-400 transition-colors">Services</Link></li>
               </ul>
             </div>
             
             <div>
               <h3 className="text-lg font-semibold mb-6">Resources</h3>
               <ul className="space-y-3">
-                <li><a href="#portfolio" className="text-gray-400 hover:text-sky-400 transition-colors">Portfolio</a></li>
-                <li><a href="#pricing" className="text-gray-400 hover:text-sky-400 transition-colors">Pricing</a></li>
-                <li><a href="#contact" className="text-gray-400 hover:text-sky-400 transition-colors">Contact</a></li>
+                <li><Link to ="/portfolio" className="text-gray-400 hover:text-sky-400 transition-colors">Portfolio</Link></li>
+                <li><Link to ="/pricing" className="text-gray-400 hover:text-sky-400 transition-colors">Pricing</Link></li>
+                <li><Link to ="/contact" className="text-gray-400 hover:text-sky-400 transition-colors">Contact</Link></li>
               </ul>
             </div>
             
             <div>
               <h3 className="text-lg font-semibold mb-6">Connect With Us</h3>
               <div className="flex space-x-4">
-                <a href="https://www.instagram.com/up__vibe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-sky-400 transition-colors">
+                <Link to ="https://www.instagram.com/up__vibe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-sky-400 transition-colors">
                   <span><i class="fa-brands fa-instagram"></i></span>
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=61572881707498&mibextid=wwXIfr&rdid=2HlzrvQYHE9t9U5v&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1FV9ksDdKX%2F%3Fmibextid%3DwwXIfr#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-sky-400 transition-colors">
+                </Link>
+                <Link to ="https://www.facebook.com/profile.php?id=61572881707498&mibextid=wwXIfr&rdid=2HlzrvQYHE9t9U5v&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1FV9ksDdKX%2F%3Fmibextid%3DwwXIfr#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-sky-400 transition-colors">
                   <span><i class="fa-brands fa-facebook"></i></span>
-                </a>
-                <a href="https://wa.me/+918240446317" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-sky-400 transition-colors">
+                </Link>
+                <Link to ="https://wa.me/+918240446317" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-sky-400 transition-colors">
                   <span><i class="fa-brands fa-whatsapp"></i></span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

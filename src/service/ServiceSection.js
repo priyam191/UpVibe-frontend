@@ -1,6 +1,6 @@
 import React from 'react'
 import { ServiceCard } from './ServiceCard';
-import { PackageCard } from './PackageCard'; // Corrected import statement
+// import { PackageCard } from './PackageCard'; // Corrected import statement
 
 
 export const ServiceSection = () => {
@@ -37,6 +37,17 @@ export const ServiceSection = () => {
         "Monthly performance reports"
       ],
       image: "media/strategy.jpg"
+    },
+    {
+      title: "Website Development/Web Design",
+      description: "We create stunning websites that not only look great but also drive results.",
+      features: [
+        "Custom website design",
+        "Responsive layouts",
+        "SEO optimization",
+        "Hosting and maintenance"
+      ],
+      image: "media/website.jpeg"
     }
   ];
 
@@ -75,7 +86,8 @@ export const ServiceSection = () => {
         "Competitor analysis",
         "Customized growth roadmap"
       ]
-    }
+    },
+    
   ];
 
   return (
@@ -94,18 +106,18 @@ export const ServiceSection = () => {
           ))}
         </div>
         
-        <div className="text-center mb-12 md:mb-16 mt-20">
+        {/* <div className="text-center mb-12 md:mb-16 mt-20">
           <h2 className="text-3xl md:text-4xl font-bold text-purple-700 mb-4">Our Packages</h2>
           <p className="max-w-2xl mx-auto text-gray-700">
             Choose the perfect plan for your business needs
           </p>
-        </div>
+        </div> */}
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {packages.map((pkg, index) => (
             <PackageCard key={index} {...pkg} />
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
