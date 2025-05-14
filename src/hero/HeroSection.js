@@ -36,7 +36,7 @@ export const HeroSection = () => {
             <video
               src="media/upvibe_video.mp4"
               autoPlay
-              loop
+              loop muted
               playsInline
               className="w-full h-full object-contain"
             />
