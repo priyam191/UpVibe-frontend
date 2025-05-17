@@ -34,13 +34,14 @@ export const HeroSection = () => {
           {/* Video positioned inside the screen */}
           <div className="absolute top-[19.5%] left-[17%] w-[65.8%] h-[43.6%] z-10 overflow-hidden rounded-md bg-black flex items-center justify-center">
             <video
-              src="media/upvibe_video.mp4"
-              autoPlay
-              loop
-              
+              controls
               playsInline
               className="w-full h-full object-contain"
-            />
+            >
+              <source src="/media/upvibe_video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
           </div>
 
          
