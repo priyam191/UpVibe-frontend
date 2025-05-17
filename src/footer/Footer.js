@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 export const Footer = () => {
+  const scrollToTop = () => window.scrollTo(0,0);
     return (
       <footer className="bg-gray-900 text-white pt-16 pb-6">
         <div className="max-w-6xl mx-auto px-4">
@@ -16,18 +17,18 @@ export const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
               <ul className="space-y-3">
-                <li><Link to ="/" className="text-gray-400 hover:text-sky-400 transition-colors">Home</Link></li>
-                <li><Link to ="/about" className="text-gray-400 hover:text-sky-400 transition-colors">About</Link></li>
-                <li><Link to ="/services" className="text-gray-400 hover:text-sky-400 transition-colors">Services</Link></li>
+                <li><Link to ="/" onClick={scrollToTop} className="text-gray-400 hover:text-sky-400 transition-colors">Home</Link></li>
+                <li><Link to ="/about" onClick={scrollToTop} className="text-gray-400 hover:text-sky-400 transition-colors">About</Link></li>
+                <li><Link to ="/services" onClick={scrollToTop} className="text-gray-400 hover:text-sky-400 transition-colors">Services</Link></li>
               </ul>
             </div>
             
             <div>
               <h3 className="text-lg font-semibold mb-6">Resources</h3>
               <ul className="space-y-3">
-                <li><Link to ="/portfolio" className="text-gray-400 hover:text-sky-400 transition-colors">Portfolio</Link></li>
-                <li><Link to ="/pricing" className="text-gray-400 hover:text-sky-400 transition-colors">Pricing</Link></li>
-                <li><Link to ="/contact" className="text-gray-400 hover:text-sky-400 transition-colors">Contact</Link></li>
+                <li><Link to ="/portfolio" onClick={scrollToTop} className="text-gray-400 hover:text-sky-400 transition-colors">Portfolio</Link></li>
+                <li><Link to ="/pricing" onClick={scrollToTop} className="text-gray-400 hover:text-sky-400 transition-colors">Pricing</Link></li>
+                <li><Link to ="/contact" onClick={scrollToTop} className="text-gray-400 hover:text-sky-400 transition-colors">Contact</Link></li>
               </ul>
             </div>
             
