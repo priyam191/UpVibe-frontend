@@ -51,48 +51,48 @@ export const ServiceSection = () => {
     }
   ];
 
-  const packages = [
-    {
-      title: "Basic Package",
-      price: "₹3,000",
-      features: [
-        "5 posts per week",
-        "2 reels per week",
-        "Basic engagement",
-        "Monthly report"
-      ]
-    },
-    {
-      title: "Standard Package",
-      price: "₹5,000",
-      features: [
-        "10 posts per week",
-        "4 reels per week",
-        "Daily engagement",
-        "Bi-weekly strategy calls",
-        "Google My Business management"
-      ],
-      isHighlighted: true
-    },
-    {
-      title: "Growth Package",
-      price: "₹7,000",
-      features: [
-        "15 posts per week",
-        "6 reels per week",
-        "Daily stories",
-        "Premium engagement strategy",
-        "Weekly strategy calls",
-        "Competitor analysis",
-        "Customized growth roadmap"
-      ]
-    },
+  // const packages = [
+  //   {
+  //     title: "Basic Package",
+  //     price: "₹3,000",
+  //     features: [
+  //       "5 posts per week",
+  //       "2 reels per week",
+  //       "Basic engagement",
+  //       "Monthly report"
+  //     ]
+  //   },
+  //   {
+  //     title: "Standard Package",
+  //     price: "₹5,000",
+  //     features: [
+  //       "10 posts per week",
+  //       "4 reels per week",
+  //       "Daily engagement",
+  //       "Bi-weekly strategy calls",
+  //       "Google My Business management"
+  //     ],
+  //     isHighlighted: true
+  //   },
+  //   {
+  //     title: "Growth Package",
+  //     price: "₹7,000",
+  //     features: [
+  //       "15 posts per week",
+  //       "6 reels per week",
+  //       "Daily stories",
+  //       "Premium engagement strategy",
+  //       "Weekly strategy calls",
+  //       "Competitor analysis",
+  //       "Customized growth roadmap"
+  //     ]
+  //   },
     
-  ];
+  // ];
 
   return (
     <section id="services" className="py-16 md:py-24 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-purple-700 mb-4">Our Services</h2>
           <p className="max-w-2xl mx-auto text-gray-700">
