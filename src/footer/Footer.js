@@ -18,7 +18,7 @@ export const Footer = () => {
               <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
               <ul className="space-y-3">
                 <li><Link to ="/" onClick={scrollToTop} className="text-gray-400 hover:text-sky-400 transition-colors">Home</Link></li>
-                <li><Link to ="/about" onClick={scrollToTop} className="text-gray-400 hover:text-sky-400 transition-colors">About</Link></li>
+                {/* <li><Link to ="/about" onClick={scrollToTop} className="text-gray-400 hover:text-sky-400 transition-colors">About</Link></li> */}
                 <li><Link to ="/services" onClick={scrollToTop} className="text-gray-400 hover:text-sky-400 transition-colors">Services</Link></li>
               </ul>
             </div>

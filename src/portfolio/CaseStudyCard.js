@@ -1,24 +1,25 @@
-import React from 'react'
+import React from 'react';
 
-export const CaseStudyCard = ({ title, description, beforeImage, afterImage }) => {
-    return (
-      <div className="bg-white rounded-lg overflow-hidden shadow-md">
-        <div className="relative h-48 overflow-hidden">
-          <img 
-            src={beforeImage} 
-            alt="Before transformation" 
-            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out opacity-100 hover:opacity-0"
-          />
-          <img 
-            src={afterImage} 
-            alt="After transformation" 
-            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100"
-          />
-        </div>
-        <div className="p-6">
-          <h3 className="text-xl font-semibold text-purple-700 mb-2">{title}</h3>
-          <p>{description}</p>
-        </div>
-      </div>
-    );
-  };
+export const CaseStudyCard = ({ title, description, image, icon, tag }) => {
+  return (
+    <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+      {image && (
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-48 object-cover rounded-md mb-4"
+        />
+      )}
+      <h3 className="text-xl font-semibold text-purple-700 mb-2">
+        {icon && <span className="mr-1">{icon}</span>}
+        {title}
+      </h3>
+      <p className="text-gray-700 mb-2">{description}</p>
+      {tag && (
+        <span className="inline-block bg-green-100 text-green-700 text-sm px-3 py-1 rounded-full font-medium">
+          ✅ {tag}
+        </span>
+      )}
+    </div>
+  );
+};

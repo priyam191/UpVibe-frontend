@@ -31,22 +31,19 @@ export const Header = () => {
           </button>
 
           <ul className="hidden md:flex space-x-6">
-            <li><Link to="/about" className="font-medium hover:text-purple-700 transition-colors">About</Link></li>
+            {/* <li><Link to="/about" className="font-medium hover:text-purple-700 transition-colors">About</Link></li> */}
             <li><Link to="/services" className="font-medium hover:text-purple-700 transition-colors">Services</Link></li>
             <li><Link to="/portfolio" className="font-medium hover:text-purple-700 transition-colors">Portfolio</Link></li>
             <li><Link to="/pricing" className="font-medium hover:text-purple-700 transition-colors">Pricing</Link></li>
-            <li><Link to="/contact" className="font-medium hover:text-purple-700 transition-colors">Contact</Link></li>
           </ul>
         </nav>
 
         {mobileMenuOpen && (
           <div className="md:hidden py-4 bg-white border-t">
             <ul className="flex flex-col space-y-4">
-              <li><Link to="/about" className="block font-medium hover:text-purple-700 transition-colors" onClick={toggleMobileMenu}>About</Link></li>
               <li><Link to="/services" className="block font-medium hover:text-purple-700 transition-colors" onClick={toggleMobileMenu}>Services</Link></li>
               <li><Link to="/portfolio" className="block font-medium hover:text-purple-700 transition-colors" onClick={toggleMobileMenu}>Portfolio</Link></li>
               <li><Link to="/pricing" className="block font-medium hover:text-purple-700 transition-colors" onClick={toggleMobileMenu}>Pricing</Link></li>
-              <li><Link to="/contact" className="block font-medium hover:text-purple-700 transition-colors" onClick={toggleMobileMenu}>Contact</Link></li>
             </ul>
           </div>
         )}

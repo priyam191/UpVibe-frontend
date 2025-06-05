@@ -9,21 +9,21 @@ export const ServiceSection = () => {
       title: "Social Media Management",
       description: "We take care of your entire social media presence so you can focus on running your business.",
       features: [
-        "Instagram management",
+        "Instagram & Facebook handling",
         "Google My Business optimization",
-        "Community engagement",
+        "Post planning & scheduling",
         "Comment moderation"
       ],
       image: "media/content.jpg"
     },
     {
       title: "Content Creation",
-      description: "Eye-catching content that resonates with your audience and reflects your brand values.",
+      description: "We shoot and edit videos that grab attention and grow your reach.",
       features: [
-        "Engaging posts",
-        "Scroll-stopping reels",
-        "Interactive stories",
-        "Professional photography"
+        "Short Reels for Instagram, Facebook, and YouTube",
+        "Long-form videos for YouTube and websites",
+        "On-location shooting (if needed)",
+        "Full editing, subtitles, and effects"
       ],
       image: "media/social_media.jpg"
     },
@@ -42,10 +42,31 @@ export const ServiceSection = () => {
       title: "Website Development/Web Design",
       description: "We create stunning websites that not only look great but also drive results.",
       features: [
-        "Custom website design",
-        "Responsive layouts",
+        "Custom design based on your brand",
+        "Mobile-friendly and fast loading",
         "SEO optimization",
         "Hosting and maintenance"
+      ],
+      image: "media/website.jpeg"
+    },
+    {
+      title: "Graphic Design",
+      description: "We create graphics that speak for your brand.",
+      features: [
+        "Logos, posters, banners",
+        "Business cards and brochures",
+        "Social media creatives",
+        "Festival & event designs"
+      ],
+      image: "media/website.jpeg"
+    },
+    {
+      title: "Influencer Marketing",
+      description: "Reach more people by working with local influencers.",
+      features: [
+        "Connect with trusted influencers",
+        "Product shoutouts and collaborations",
+        "Reel & Story promotions",
       ],
       image: "media/website.jpeg"
     }
