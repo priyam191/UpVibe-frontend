@@ -28,7 +28,6 @@ export const Footer = () => {
               <ul className="space-y-3">
                 <li><Link to ="/portfolio" onClick={scrollToTop} className="text-gray-400 hover:text-sky-400 transition-colors">Portfolio</Link></li>
                 <li><Link to ="/pricing" onClick={scrollToTop} className="text-gray-400 hover:text-sky-400 transition-colors">Pricing</Link></li>
-                <li><Link to ="/contact" onClick={scrollToTop} className="text-gray-400 hover:text-sky-400 transition-colors">Contact</Link></li>
               </ul>
             </div>
             
