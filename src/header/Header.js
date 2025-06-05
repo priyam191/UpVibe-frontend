@@ -8,12 +8,19 @@ export const Header = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
+  const scrollToTop = () =>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
   return (
     <header className="bg-white shadow-md fixed w-full z-50">
       <div className="max-w-6xl mx-auto px-4">
         <nav className="flex justify-between items-center py-4">
           <div style={{ height: '50px', width: '50px' }} className="flex items-center">
-            <Link to="/"><img src="media/upvibe.png" alt="logo" /></Link>
+            <Link to="/"><img src="media/upvibe.png" alt="logo" onClick={scrollToTop}/></Link>
           </div>
 
           <button
